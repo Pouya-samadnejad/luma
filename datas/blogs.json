@@ -1,0 +1,20 @@
+[
+  {
+    "id": 12,
+    "image": "/mustread.jpg",
+    "description": "یک متن آزمایشی خبر در اینجا قرار گرفته است.",
+    "link": "/"
+  },
+  {
+    "id": 13,
+    "image": "/mustread.jpg",
+    "description": "یک متن آزمایشی خبر در اینجا قرار گرفته است.",
+    "link": "/"
+  },
+  {
+    "id": 14,
+    "image": "/mustread.jpg",
+    "description": "یک متن آزمایشی خبر در اینجا قرار گرفته است.",
+    "link": "/"
+  }
+]
