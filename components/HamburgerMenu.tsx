@@ -17,28 +17,26 @@ import { AccordionButton } from "./AccordionButton";
 export function HamburgeMenu() {
   return (
     <Sheet>
-      <SheetTrigger>
+      <SheetTrigger asChild>
         <Button variant="outline">
           <Menu />
         </Button>
       </SheetTrigger>
       <SheetContent side="left">
         <SheetHeader>
-          <SheetTitle className="text-white! text-xl"></SheetTitle>
-          <SheetDescription className="mt-4">
-            <Button className="bg-background  w-full text-white" asChild>
-              <Link href="/">راهکار ها</Link>
-            </Button>
-            <AccordionButton title="سرویس ها">ساب منو</AccordionButton>
-            <AccordionButton title=" منابع">ساب منو</AccordionButton>
+          <SheetTitle className="text-white! text-xl mb-2.5"></SheetTitle>
+          <Button className="bg-background  w-full text-white" asChild>
+            <Link href="/">راهکار ها</Link>
+          </Button>
+          <AccordionButton title="سرویس ها">ساب منو</AccordionButton>
+          <AccordionButton title=" منابع">ساب منو</AccordionButton>
 
-            <Button className="bg-background w-full text-white" asChild>
-              <Link href="/">تعرفه</Link>
-            </Button>
-            <Button className="bg-background w-full text-white" asChild>
-              <Link href="/">وبلاگ</Link>
-            </Button>
-          </SheetDescription>
+          <Button className="bg-background w-full text-white" asChild>
+            <Link href="/">تعرفه</Link>
+          </Button>
+          <Button className="bg-background w-full text-white" asChild>
+            <Link href="/">وبلاگ</Link>
+          </Button>
         </SheetHeader>
         <SheetFooter>
           <Button className="text-white text-center" asChild>
