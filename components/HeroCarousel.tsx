@@ -59,7 +59,14 @@ export function HeroCarousel() {
   }, [api]);
 
   return (
-    <section className="relative w-full lg:max-w-[744px]  mt-8" dir="rtl">
+    <motion.section
+      initial={{ opacity: 0, y: -10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+      className="relative w-full lg:max-w-[744px]  mt-8"
+      dir="rtl"
+    >
       <Carousel
         setApi={setApi}
         plugins={[plugin.current]}
@@ -123,6 +130,6 @@ export function HeroCarousel() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

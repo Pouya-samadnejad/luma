@@ -7,9 +7,9 @@ export default function TestimonialSection() {
     <div>
       <motion.h4
         className="text-center mb-8"
-        initial={{ opacity: 0, y: 20 }} // پایین‌تر و نامرئی
-        whileInView={{ opacity: 1, y: 0 }} // سر جای اصلی و مرئی
-        viewport={{ once: true, margin: "-100px" }} // فقط یکبار اجرا شود
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         نظرات کاربران
