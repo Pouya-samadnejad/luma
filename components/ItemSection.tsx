@@ -5,16 +5,16 @@ import { Button } from "./ui/button";
 
 export default function ItemSection() {
   return (
-    <GlassCard className="flex justify-between items-center mt-10 ">
+    <GlassCard className="lg:flex justify-between items-center mt-10 space-y-3 lg:space-y-0 ">
       {items.map((item) => (
         <div
           className="p-px dark:bg-linear-to-r from-[#343A40]  to-[#080808] rounded-xl  "
           key={item.id}
         >
-          <div className="bg-background">
+          <div className="bg-background rounded-2xl">
             <GlassCard
               glowColor={item.color}
-              className="flex flex-col items-center text-center p-8 w-full max-w-[470px] h-[431px] gap-4 background-red backdrop-blur-3xl  "
+              className="flex flex-col items-center text-center p-8 w-full lg:max-w-[470px] h-[431px] gap-4 background-red backdrop-blur-3xl  "
             >
               <Image
                 src={item.image}

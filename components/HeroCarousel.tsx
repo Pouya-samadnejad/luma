@@ -59,7 +59,7 @@ export function HeroCarousel() {
   }, [api]);
 
   return (
-    <section className="relative w-full max-w-[744px]  mt-8" dir="rtl">
+    <section className="relative w-full lg:max-w-[744px]  mt-8" dir="rtl">
       <Carousel
         setApi={setApi}
         plugins={[plugin.current]}
@@ -81,7 +81,6 @@ export function HeroCarousel() {
                     <div className="absolute inset-0 ">
                       <Image src={slide.image} alt={slide.id.toString()} fill />
 
-                      {/* افکت‌های نوری (جابجا شده برای تعادل بهتر در راست‌چین) */}
                       <div className="absolute -top-24 -left-24 w-64 h-64 bg-purple-500/30 blur-[100px] rounded-full" />
                       <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-blue-500/20 blur-[100px] rounded-full" />
                     </div>
@@ -93,7 +92,6 @@ export function HeroCarousel() {
         </CarouselContent>
       </Carousel>
 
-      {/* نوار پیشرفت (راست‌چین) */}
       <div
         className="absolute bottom-10 left-0 right-0 z-20 flex justify-center px-10"
         dir="rtl"
@@ -105,13 +103,10 @@ export function HeroCarousel() {
               className="group relative h-1.5 flex-1 overflow-hidden rounded-full bg-white/20 cursor-pointer"
               onClick={() => api?.scrollTo(index)}
             >
-              {/* حالت پر شده (برای اسلایدهای سمت راست که رد شده‌اند) */}
               {index < current && <div className="absolute inset-0 bg-white" />}
 
-              {/* حالت در حال پر شدن (برای اسلاید جاری) */}
               {index === current && (
                 <motion.div
-                  // ۲. مهم: لنگر انیمیشن به سمت راست (right-0) تا از راست به چپ پر شود
                   className="absolute inset-y-0 right-0 bg-white"
                   initial={{ width: "0%" }}
                   animate={{ width: "100%" }}

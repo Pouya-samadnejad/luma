@@ -6,9 +6,9 @@ import { Icon } from "@iconify/react";
 export default function Footer() {
   return (
     <footer className="relative pt-px bg-linear-to-r from-[#DA8FFF]  via-[#FF6482] to-[#FFB340] h-full">
-      <div className="absolute top-[5%] left-1/2 -translate-x-1/2 h-[90px] w-1/2 rounded-full  blur-[100px] opacity-20 pointer-events-none bg-[#FF6482]" />
-      <div className="w-full bg-background dark:text-white py-10 px-50">
-        <div className="flex justify-between">
+      <div className="absolute top-[5%] left-1/2 -translate-x-1/2 h-[90px] w-1/2 rounded-full  blur-[100px] opacity-20 pointer-events-none bg-[#FF6482] " />
+      <div className="w-full bg-background dark:text-white py-10 px-4 lg:px-50 ">
+        <div className="lg:flex  justify-between text-center lg:text-right">
           <div className="lg:col-span-2 flex flex-col gap-6">
             <h5 className="text-5xl font-bold dark:text-gray-100">
               لینک‌های مهم
@@ -52,7 +52,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="lg:col-span-6 flex flex-col gap-6 text-right">
+          <div className="lg:col-span-6 flex flex-col gap-6 text-center lg:text-right mt-7 lg:mt-0">
             <h5 className="text-5xl font-bold dark:text-gray-100">
               اطلاعات تماس
             </h5>
@@ -78,7 +78,7 @@ export default function Footer() {
               <p className="pt-2 dark:text-gray-400 font-bold">
                 :شبکه‌های اجتماعی
               </p>
-              <div className="flex items-center gap-8 text-white">
+              <div className="flex items-center gap-8 text-white justify-center lg:justify-start">
                 <Link
                   href="#"
                   className="hover:text-purple-400 transition-transform hover:scale-110"
@@ -101,7 +101,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="lg:col-span-4 flex flex-col gap-6 items-start lg:items-end">
+          <div className="lg:col-span-4 hidden lg:flex flex-col gap-6 items-start lg:items-end">
             <h5 className="text-5xl font-bold dark:text-gray-100 w-full text-right lg:text-left">
               مجوز های رسمی
             </h5>

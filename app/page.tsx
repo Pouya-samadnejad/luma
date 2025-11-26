@@ -12,7 +12,7 @@ import TestimonialSection from "@/components/TestimonialSection";
 export default function page() {
   return (
     <div>
-      <div className="p-50">
+      <div className="lg:px-50 mt-30 px-5 ">
         <HeroSection />
         <ItemSection />
         <ArticleSection
@@ -23,7 +23,7 @@ export default function page() {
         <ColleagueAiSection />
       </div>
       <TestimonialSection />
-      <div className="px-50 my-30">
+      <div className="lg:px-50 px-5 my-30 ">
         <ArticleSection
           title="وبلاگ"
           data={blogItems}

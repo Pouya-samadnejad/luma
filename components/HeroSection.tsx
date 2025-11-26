@@ -4,8 +4,8 @@ import { HeroCarousel } from "./HeroCarousel";
 
 export default function HeroSection() {
   return (
-    <main className="h-full flex items-center justify-between">
-      <div className="space-y-5 w-1/2">
+    <main className="h-full lg:flex items-center justify-between">
+      <div className="space-y-5 w-full lg:w-1/2">
         <h1> هوش مصنوعی، سفارشی برای شما!</h1>
         <p className="text-[21px] leading-9">
           با این سرویس، شما می‌توانید یک دستیار هوش مصنوعی اختصاصی بسازید که با
