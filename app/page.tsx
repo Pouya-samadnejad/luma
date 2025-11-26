@@ -2,12 +2,12 @@ import HeroSection from "@/components/HeroSection";
 import ItemSection from "@/components/ItemSection";
 import AivideoSection from "@/components/AivideoSection";
 import ColleagueAiSection from "@/components/ColleagueAiSection";
-import UsersCommentsSection from "@/components/UsersCommentsSection";
 import items from "@/datas/mustread.json";
 import blogItems from "@/datas/blogs.json";
 import ArticleSection from "@/components/ArticleSection";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import TestimonialSection from "@/components/TestimonialSection";
 
 export default function page() {
   return (
@@ -22,7 +22,7 @@ export default function page() {
         <AivideoSection />
         <ColleagueAiSection />
       </div>
-      <UsersCommentsSection />
+      <TestimonialSection />
       <div className="px-50 my-30">
         <ArticleSection
           title="وبلاگ"

@@ -1,8 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
-import CommentCarousel from "./CommentCarousel";
+import TestimonialCarousel from "./TestimonialCarousel";
 
-export default function UsersCommentsSection() {
+export default function TestimonialSection() {
   return (
     <div>
       <motion.h4
@@ -14,9 +14,9 @@ export default function UsersCommentsSection() {
       >
         نظرات کاربران
       </motion.h4>
-      <div className="space-y-8">
-        <CommentCarousel speed={1} />
-        <CommentCarousel speed={-1} />
+      <div dir="ltr" className="space-y-8">
+        <TestimonialCarousel direction="right" />
+        <TestimonialCarousel direction="left" />
       </div>
     </div>
   );

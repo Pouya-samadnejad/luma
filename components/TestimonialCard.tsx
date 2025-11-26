@@ -23,18 +23,20 @@ interface CommentSectionProps {
   tags: string[];
   index: number;
 }
-export default function CommentSection({
+export default function TestimonialCard({
   name,
   avatar,
   rate,
   comment,
   link,
   tags,
-  index,
 }: CommentSectionProps) {
   return (
-    <div className="p-px bg-linear-to-r from-[#DA8FFF]  via-[#FF6482] to-[#FFB340] h-full">
-      <div>
+    <div
+      dir="rtl"
+      className="p-px bg-linear-to-r from-[#DA8FFF] w-[538px] via-[#FF6482] to-[#FFB340] h-full"
+    >
+      <blockquote>
         <Card className="rounded-none h-full ">
           <CardHeader>
             <CardTitle className="flex items-center gap-2.5">
@@ -75,7 +77,7 @@ export default function CommentSection({
             </Link>
           </CardFooter>
         </Card>
-      </div>
+      </blockquote>
     </div>
   );
 }
