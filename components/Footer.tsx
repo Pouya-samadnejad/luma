@@ -75,7 +75,6 @@ export default function Footer() {
                 SUPPORT@LUMAI.IR : ایمیل پشتیبانی
               </p>
 
-              {/* Social Text Label */}
               <p className="pt-2 dark:text-gray-400 font-bold">
                 :شبکه‌های اجتماعی
               </p>
@@ -107,19 +106,16 @@ export default function Footer() {
               مجوز های رسمی
             </h5>
 
-            <div className="flex gap-4 flex-wrap justify-end">
-              <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center overflow-hidden">
-                <Image
-                  src="https://cdn.zarinpal.com/badges/trustLogo/1.svg"
-                  alt="Zarinpal"
-                  width={20}
-                  height={20}
-                />
+            <div className="flex gap-4 flex-wrap justify-end ">
+              <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center overflow-hidden relative">
+                <Image src="/zarin.png" alt="Zarinpal" fill />
               </div>
 
               <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center overflow-hidden">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1q8kMjbPgvN5oK_JDGg0QoT4Cq254McsIvg&s"
+                <Image
+                  width={125}
+                  height={125}
+                  src="/enamad.png"
                   alt="Enamad"
                   className="w-20 h-20 object-contain"
                 />

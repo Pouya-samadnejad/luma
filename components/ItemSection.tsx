@@ -7,8 +7,8 @@ export default function ItemSection() {
   return (
     <GlassCard className="flex justify-between items-center mt-10 ">
       {items.map((item) => (
-        <div className="p-px bg-linear-to-r from-[#343A40]  to-[#080808] rounded-xl ">
-          <div className="bg-black">
+        <div className="p-px dark:bg-linear-to-r from-[#343A40]  to-[#080808] rounded-xl ">
+          <div className="bg-background">
             <GlassCard
               key={item.id}
               glowColor={item.color}
