@@ -38,7 +38,7 @@ export default function AnimatedBackground() {
           x: [0, -30, 30, 0],
         }}
         transition={{
-          duration: 0.5,
+          duration: 15,
           repeat: Infinity,
           ease: "easeInOut",
           delay: 2,
