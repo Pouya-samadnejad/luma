@@ -5,13 +5,11 @@ import { motion } from "motion/react";
 export default function AnimatedBackground() {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden transition-colors duration-500 bg-white dark:bg-[#0a0a0a]">
-      {/* خطوط پس زمینه */}
       <div
         className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)]
-        bg-[size:24px_24px]"
+        bg-size-[24px_24px]"
       />
 
-      {/* بلاب اول */}
       <motion.div
         animate={{
           scale: [1, 1.2, 1],
@@ -33,7 +31,6 @@ export default function AnimatedBackground() {
         "
       />
 
-      {/* بلاب دوم */}
       <motion.div
         animate={{
           scale: [1, 1.5, 1],
@@ -41,7 +38,7 @@ export default function AnimatedBackground() {
           x: [0, -30, 30, 0],
         }}
         transition={{
-          duration: 15,
+          duration: 0.5,
           repeat: Infinity,
           ease: "easeInOut",
           delay: 2,

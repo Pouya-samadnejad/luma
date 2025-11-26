@@ -8,11 +8,11 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import Rating from "./Rating";
 import { Badge } from "./ui/badge";
 import { Separator } from "./ui/separator";
 import Link from "next/link";
 import { Link2 } from "lucide-react";
+import { Rating } from "./Rating";
 
 interface CommentSectionProps {
   name: string;

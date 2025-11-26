@@ -1,50 +1,47 @@
-"use client";
-
 import { Star } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 interface RatingProps {
   rating: number;
+  max?: number;
   size?: number;
   className?: string;
-  showNumber?: boolean;
 }
 
-export default function Rating({
+export const Rating = ({
   rating,
-  size = 32,
-  className,
-  showNumber = true,
-}: RatingProps) {
-  const fillPercentage = Math.min(Math.max((rating / 5) * 100, 0), 100);
+  max = 5,
+  size = 24,
+  className = "",
+}: RatingProps) => {
+  const percentage = Math.min(100, Math.max(0, (rating / max) * 100));
 
   return (
-    <div className={cn("flex items-center gap-2", className)}>
-      <div className="relative flex items-center justify-center">
+    <div dir="ltr" className={`flex items-center gap-2 font-sans ${className}`}>
+      <div className="relative" style={{ width: size, height: size }}>
         <Star
           size={size}
-          className="text-muted-foreground/20"
+          className="absolute top-0 left-0 text-gray-500"
           strokeWidth={2}
         />
 
         <div
-          className="absolute top-0 left-0 h-full overflow-hidden flex items-center"
-          style={{ width: `${fillPercentage}%` }}
-          dir="ltr"
+          className="absolute top-0 left-0 overflow-hidden"
+          style={{ width: `${percentage}%` }}
         >
           <Star
             size={size}
-            className="text-yellow-500 fill-yellow-500"
+            className="text-yellow-600 fill-yellow-600"
             strokeWidth={2}
           />
         </div>
       </div>
 
-      {showNumber && (
-        <span className="text-xl font-bold text-foreground tabular-nums">
-          {rating}
-        </span>
-      )}
+      <span
+        className="font-bold text-gray-300"
+        style={{ fontSize: size * 0.75 }}
+      >
+        {rating.toFixed(1)}
+      </span>
     </div>
   );
-}
+};
