@@ -19,7 +19,7 @@ export default function AnimatedBackground() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute -top-[10%] left-[20%] h-[500px] w-[500px] rounded-full blur-[100px]
+        className="absolute top-[10%] left-[20%] h-[500px] w-[500px] rounded-full blur-[100px]
         bg-purple-300 dark:bg-[#3C0061]"
       />
 
@@ -37,6 +37,22 @@ export default function AnimatedBackground() {
         }}
         className="absolute top-[20%] right-[10%] h-[400px] w-[400px] rounded-full blur-[100px]
         bg-orange-200 dark:bg-[#FDB813]"
+      />
+      <motion.div
+        animate={{
+          scale: [1, 1.5, 1],
+          opacity: [0.2, 0.4, 0.2],
+          x: [0, 30, 30, 0],
+          zIndex: [0, 50, 0],
+        }}
+        transition={{
+          duration: 15,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 2,
+        }}
+        className="absolute top-1/2 right-1/3 h-[400px] w-[400px] rounded-full blur-[100px]
+        bg-orange-200 dark:bg-[#a50d0d]"
       />
     </div>
   );
