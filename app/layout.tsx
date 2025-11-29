@@ -53,7 +53,7 @@ const iranyekan = localFont({
 });
 export const metadata: Metadata = {
   title: "luma",
-  description: "پروژه  تک صفحه ای لوما",
+  description: "صفحه  اصلی سایت لوما",
 };
 
 export default function RootLayout({
